@@ -1,0 +1,6 @@
+Esta máquina deve ser capaz de:
+- emitir o ticket com um determinado valor fixo
+{ticket deve possuir um número e valor}
+- controlar se o ticket está pago/ou não
+- receber o pagamento do ticket
+- permitir que se possa consultar o saldo das operações a qualquer momento
