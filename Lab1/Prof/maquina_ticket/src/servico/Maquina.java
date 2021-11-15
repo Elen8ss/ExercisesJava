@@ -61,4 +61,11 @@ public class Maquina {
         return temp;
     }
 
+    public int getNumTickets() {
+        int cont = 0;
+        for (Ticket t : emissoes) {
+            cont++;
+        }
+        return cont;
+    }
 }

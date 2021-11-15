@@ -8,7 +8,7 @@ public class Main {
         int op;
         Maquina maquina = new Maquina(2);
         Scanner ler = new Scanner(System.in);
-        String[] opction = {"--------------------","Emissor de tickets\n", "Selecione a operação\n","1-Emitir um ticket","2-Verificar se o tickt está pago ou não","3-Receber o pagamento do ticket","4-Consutar o saldo das operações"};
+        String[] opction = {"--------------------","Emissor de tickets\n", "Selecione a operação\n","1-Emitir um ticket","2-Verificar se o ticket está pago ou não","3-Receber o pagamento do ticket","4-Consutar o saldo das operações","5-Total de tickets emitidos"};
 
         do {
             for (String t : opction) {
@@ -42,6 +42,9 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Saldo= "+ maquina.saldo());
+                    break;
+                case 5:
+                    System.out.println("Número de tickter emitidos até o momento é = "+maquina.getNumTickets());
                 default:
                     if (op > 0)
                         System.out.println("Digite o valor correto.");
