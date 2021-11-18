@@ -1,0 +1,21 @@
+Em épocas de imposto de renda, escreva um programa em java
+para modelar e calcular a tributação.
+
+Todos no Brasil são contribuintes. Eles podem ser pessoas 
+físicas ou pessoas jurídicas. Sendo que a informação de 
+contribuinte é uma abstração.
+
+Uma pessoa física é identificada por um CPF e uma pessoa 
+jurídica é identificada por um CNPJ. As regras de 
+tributação entre elas também é diferente. 
+Em ambos é coletado a soma de rendimentos anuais.
+
+A tributação normalmente é cobrada em faixas. No caso 
+de pessoa física as faixas estão em anexo.
+O cálculo é assim:
+Imposto = ( Total de rendas - deduções ) * alíquota da faixa
+
+Sua missão: ler a informação de contribuintes 
+(identificação, renda e deduções) e informar para ele a 
+faixa de alíquota além do valor do imposto a ser 
+recolhido.

@@ -1,0 +1,13 @@
+================Entidades========================
+Pessoa Física
+-cpf
+-renda
+-deduções
+Pessoa Jurídica
+-cnpj
+-renda
+-deduções
+==================Serviço ou controlador==============
+Cálculo do imposto() 
+( Total de rendas - deduções ) * alíquota da faixa
+=======================interface======================
