@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Lab2/Me/Lab2Me/src",
         "Lab1/Prof/maquina_ticket/src",
-        "Lab2/Me/Lab2Me/src"
+        "Trabalho1/src"
     ]
 }

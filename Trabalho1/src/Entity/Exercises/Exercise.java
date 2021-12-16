@@ -4,8 +4,7 @@ public abstract class Exercise {
     private String name;
     private float met;
 
-
-
+    //calcula caloria
     public float calcCalories(float weight, float time) {
         return this.met*weight*time;
     }

@@ -2,23 +2,22 @@ package Entity.Reports;
 
 import java.util.ArrayList;
 
-public class ReportDay {
+public class ReportDay { //relatorio diario
     private String date;
     private ArrayList<ReportExercise> exercises;
     
     public ReportDay(String date, String name, float time, float calories) {
-        this.setDate(date);
+        this.date = date;
         exercises = new ArrayList<>();
         exercises.add(new ReportExercise(name, time, calories));
     }
-    
-    public boolean isExerciseRegistered(String name) {
-        for (ReportExercise r : exercises) {
-            if (r.getName().equals(name)) {
-                return true;
-            }
-        }
-        return false;
+   
+
+    public void setName(String date) {
+        this.date = date;
+    }
+
+    public ReportDay() {
     }
 
     public void addTimeAndCalories(String name, float time, float calories) {
@@ -37,6 +36,7 @@ public class ReportDay {
         this.date = date;
     }
 
+    //adiciona no ArrayList de exercicio
     public void addExercises(String name, float time, float calories) {
         exercises.add(new ReportExercise(name, time, calories));
     }
@@ -65,16 +65,20 @@ public class ReportDay {
         return totalCalories;
     }
 
+    
     @Override
     public String toString() {
         String report;
-        report = "\nData: " + this.date + "\n";
+        report =  "\nData: " + this.date + "\n";
         for (ReportExercise r : exercises) {
-            report += r.toString();
-            report += "\n";
+            report += r.toString() +"\n";
+           // report += "\n";
         }
         report += "\nTotal de calorias gastas: " + getCaloriesTotal() + " Kcal";
         report += "\nTempo de exercício diário: " + getTimeTotal() + " min\n";
         return report;
     }
+
+    
+
 }
