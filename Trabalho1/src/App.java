@@ -21,10 +21,11 @@ public static void main(String[] args) throws Exception {
 	Scanner input = new Scanner(System.in);
 	BackEndUser back = new BackEndUser();
 	String[] listExercise = back.listExercises();
-	boolean continued = true;
+	boolean continued;
 		
 	do {
 		try {
+			continued = true;
 			menu();
 			opcao = input.nextInt();
 			input.nextLine();
@@ -69,7 +70,6 @@ public static void main(String[] args) throws Exception {
 			}
 		//Gerar o relatórios de exercícios de determinado usuário
 			case 2: {
-			continued = true;
 			
 			while (continued) {
 				try {
@@ -134,7 +134,7 @@ public static void main(String[] args) throws Exception {
 											System.out.println("Data do exercicio (Formato: dd/mm/aaaa): ");
 											date = input.nextLine();
 											
-										} while(dateIsValid(date)!=false);
+										} while(dateIsValid(date)==false);
 										
 										System.out.println(back.getValueReportDay(nameUser, date));
 										break;
@@ -200,7 +200,7 @@ public static void main(String[] args) throws Exception {
 				return false;
 		}
 		//retorna um date nesse formato "dd/MM/yyyy", passando uma string como data
-		SimpleDateFormat dateFormat = new SimpleDateFormat("DD/MM/YYYY");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/mm/yyyy");
 		if (date.trim().length() != dateFormat.toPattern().length()) {
 				return false;
 		}
