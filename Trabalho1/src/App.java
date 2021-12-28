@@ -60,7 +60,7 @@ public static void main(String[] args) throws Exception {
 						continued = false;
 					
 					} catch(NumberFormatException e) {
-						System.out.println("\n\n>>Error. Entrada inválida<<, pressione enter para continuar");
+						System.out.println("\n\n>>Error. Entrada inválida<<");
 						System.out.println("Se quiser voltar para o menu principal digite 0");
 						input.nextLine();
 					}
