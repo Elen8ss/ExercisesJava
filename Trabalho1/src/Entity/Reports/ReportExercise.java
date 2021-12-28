@@ -37,7 +37,7 @@ public class ReportExercise {
 
     @Override
     public String toString() {
-        return name+" tempo: " + time + " minutos |" +
+        return "\n" + name+" | tempo: " + time + " minutos |" +
         " calorias: " + calories + " Kcal";
     }
 }
